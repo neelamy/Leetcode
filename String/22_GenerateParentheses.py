@@ -14,7 +14,7 @@ class Solution(object):
         if n == 1:
             return ans
         
-        
+        # insert '()' at each position in current string       
         for i in range(n - 1):
             temp = set()
             for current in ans:

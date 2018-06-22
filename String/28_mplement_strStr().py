@@ -13,12 +13,14 @@ class Solution(object):
         :rtype: int
         """
         h = len(haystack)
-        n = len(needle)
-        
+        n = len(needle)       
         if   n == 0: return 0
-        
         for i in range(h):
+
+            # return -1 is not sufficient chars left to check
             if i + n > h : return -1
+
+            # check if haystack starting from ith position matches needle
             l = 0
             while( i + l < h and l < n  and haystack[i+ l] == needle[l]): 
                 l += 1
