@@ -18,7 +18,7 @@ class Solution(object):
         n = len(nums) 
         for i in xrange(n):
             for j in xrange(n):
-                if i != j and  i < n:
+                if i != j and  i < j:
                     d[nums[i] + nums[j]].append([i,j])
                     
         for i in d:

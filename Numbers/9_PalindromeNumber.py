@@ -1,4 +1,8 @@
+# Source : https://leetcode.com/problems/palindrome-number/description/
 
+# Algo/DS : Number
+
+# Complexity : O(ns)
 
 class Solution(object):
     def isPalindrome(self, x):
