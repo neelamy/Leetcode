@@ -10,17 +10,17 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        ans = ['()']
-        if n == 1:
-            return ans
-        
-        # insert '()' at each position in current string       
-        for i in range(n - 1):
-            temp = set()
-            for current in ans:
-                for pos in range(len(current)):
-                    new_list = current[0:pos] + "()" + current[pos:]
-                    temp.add(new_list)
-            ans = list(temp)
+            ans = ['()']
+            if n == 1:
+                return ans
+            
+            # insert '()' at each position in current string       
+            for i in range(n - 1):
+                temp = set()
+                for current in ans:
+                    for pos in range(len(current)):
+                        new_list = current[0:pos] + "()" + current[pos:]
+                        temp.add(new_list)
+                ans = list(temp)
                     
         return ans
