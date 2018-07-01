@@ -1,8 +1,8 @@
 # Source : https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 
-# Algo/DS : Linked List 
+# Algo/DS : Binary Tree
 
-# Complexity : O(n), space = O(1)
+# Complexity : O(n), space = O(n)
 
 # Definition for a binary tree node.
 # class TreeNode(object):
