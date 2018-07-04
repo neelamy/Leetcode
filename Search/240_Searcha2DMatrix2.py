@@ -15,7 +15,7 @@ class Solution(object):
         
         max_col = len(matrix[0]) -1 
         max_row = len(matrix) -1 
-        i , j = 0, max_col
+        i , j = 0, max_col	
         while i <= max_row and  j >=0:
             if matrix[i][j] == target : return True
             elif matrix[i][j] > target: j -= 1
