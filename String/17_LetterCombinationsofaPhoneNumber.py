@@ -1,9 +1,9 @@
 
 # Source : https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 
-# Algo/DS : Array
+# Algo/DS : String
 
-# Complexity : O(n + m)
+# Complexity : O(3^n) n = no of digits
 
 class Solution(object):
     def letterCombinations(self, digits):

@@ -6,7 +6,7 @@
 
 # Complexity : O(n)
 
-
+# check this : https://leetcode.com/problems/split-linked-list-in-parts/discuss/109284/Elegant-Python-with-Explanation-45ms
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):

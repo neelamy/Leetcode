@@ -2,7 +2,7 @@
 
 # Algo/DS : Array, Bactracking
 
-# Complexity : 
+# Complexity : O(n)
 
 class Solution(object):
     def countAndSay(self, n):

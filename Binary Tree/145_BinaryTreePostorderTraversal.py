@@ -27,5 +27,36 @@ class Solution(object):
             self.postorderTraversal(root.right)           
             self.traversal.append(root.val)
         return self.traversal
+
+
+
+# using stack
+
+class Solution(object):
+        
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        traversal,queue = [],[]
+        if not root : return traversal
+        while True:          
+            while(root):
+                if root.right is not None: queue.append(root.right)
+                queue.append(root)
+                root = root.left
+               
+            root = queue.pop()
+            
+            if queue and root.right and root.right.val == queue[-1].val:
+                queue.pop()
+                queue.append(root)
+                root = root.right
+            else:
+                traversal.append(root.val)
+                root = None
+            if not queue: break
+        return traversal
             
                

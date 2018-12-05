@@ -2,7 +2,7 @@
 
 # Algo/DS : DP
 
-# Complexity : O(n ^2)
+# Complexity : O(n *2^n)
 
 
 class Solution(object):

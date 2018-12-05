@@ -21,6 +21,7 @@ def permuteUnique(self, nums):
                 temp.append(current[:pos] + [number] + current[pos:])
 
                 # this is to eliminate duplicates
+                # break as other cases will be covered in other lists
                 if pos < index and current[pos] ==  number :break
         result = temp
         
